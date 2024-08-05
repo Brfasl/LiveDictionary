@@ -32,7 +32,7 @@
    ```bash
    java -cp bin LiveDictionary
 
-## Usage**
+## Usage
 Upon starting the application, you will be presented with a menu:
 
 Add: Enter a word and its meaning to add it to the dictionary.
@@ -42,7 +42,7 @@ Search: Search for a specific word to see its meaning.
 Delete: Remove a word from the dictionary.
 Exit: Exit the application.
 
-## Example:
+## Example
 MENU
 1-Add
 2-Edit
@@ -54,5 +54,5 @@ Your choice=1
 Enter the word: hello
 Enter the meaning: A greeting or expression of goodwill
 
-## Contact:
+## Contact
 For any questions or feedback, please reach out to berfin1884@gmail.com or [LinkedIn](https://www.linkedin.com/in/berfinasl).
