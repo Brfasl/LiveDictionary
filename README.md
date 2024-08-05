@@ -34,25 +34,34 @@
 
 ## Usage
 Upon starting the application, you will be presented with a menu:
-
-Add: Enter a word and its meaning to add it to the dictionary.
-Edit: Enter the word you want to edit and provide the new meaning.
-List: View all the words and their meanings currently in the dictionary.
-Search: Search for a specific word to see its meaning.
-Delete: Remove a word from the dictionary.
-Exit: Exit the application.
-
+- **Add Words**: Add new words with their meanings to the dictionary.
+- **Edit Words**: Update the meaning of an existing word.
+- **List Words**: Display all words and their meanings in alphabetical order.
+- **Search Words**: Search for a word and display its meaning.
+- **Delete Words**: Remove a word from the dictionary.
+- **Exit**: Exit the application.
+  
 ## Example
 MENU
-1-Add
-2-Edit
-3-List
-4-Search
-5-Delete
-6-Exit
-Your choice=1
-Enter the word: hello
-Enter the meaning: A greeting or expression of goodwill
+1. ADD
+2. EDIT
+3. LIST
+4. SEARCH
+5. DELETE
+6. EXIT
+- Your choice=1
+- Enter the word: hello
+- Enter the meaning: A greeting or expression of goodwill
+
+
 
 ## Contact
 For any questions or feedback, please reach out to berfin1884@gmail.com or [LinkedIn](https://www.linkedin.com/in/berfinasl).
+
+
+
+
+
+
+
+
