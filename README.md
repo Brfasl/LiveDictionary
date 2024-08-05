@@ -55,4 +55,4 @@ Enter the word: hello
 Enter the meaning: A greeting or expression of goodwill
 
 ## Contact:
-For any questions or feedback, please reach out to berfin1884@gmail.com or [LinkedIn](https://www.linkedin.com/in/berfinasl)l.
+For any questions or feedback, please reach out to berfin1884@gmail.com or [LinkedIn](https://www.linkedin.com/in/berfinasl).
