@@ -11,25 +11,25 @@ public class Main{
         Map<String,String> dictionary=new TreeMap<>();
 
         do {
-            System.out.print("MENÜ\n1-Ekleme\n2-Düzeltme\n3-Listeleme\n4-Arama\n5-Silme\n6-Çıkış\nYapmak İstediğiniz Komutu Seçiniz=");
+            System.out.print("MENU\n1-ADD\n2-EDIT\n3-LIST\n4-SEARCH\n5-DELETE\n6-EXIT\nYour choice=");
             choice = inputInt.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.print("Kelime Giriniz=");
+                    System.out.print("Enter the word: ");
                     String word = inputStr.nextLine();
-                    System.out.print("Anlamını Giriniz=");
+                    System.out.print("Enter the meaning: ");
                     String meaning = inputStr.nextLine();
                     dictionary.put(word, meaning);
                     break;
                 case 2:
-                    System.out.print("Düzeltmek İstediğiniz Kelimeyi Giriniz=");
+                    System.out.print("Enter the word to edit: ");
                     word = inputStr.nextLine();
-                    System.out.print("Anlamını Giriniz=");
+                    System.out.print("Enter the meaning: ");
                     meaning = inputStr.nextLine();
                     dictionary.put(word, meaning);
                     break;
                 case 3:
-                    System.out.println("******Kelimeler******");
+                    System.out.println("****** Words in the Dictionary ******");
                     Iterator<Map.Entry<String, String>> iterator = dictionary.entrySet().iterator();
                     while (iterator.hasNext()) {
                         Map.Entry<String, String> entry = iterator.next();
@@ -37,23 +37,27 @@ public class Main{
                     }
                     break;
                 case 4:
-                    System.out.println("Aranan Kelimeyi Giriniz=");
+                    System.out.println("Enter the word to search: ");
                     word = inputStr.nextLine();
                     if (dictionary.containsKey(word))
                         System.out.println(dictionary.get(word));
                     else
-                        System.out.println("Böyle Bir Kelime Yoktur.");
+                        System.out.println("Word not found.");
 
                     break;
                 case 5:
-                    System.out.println("Silmek İstediğiiz Kelimeyi Giriniz=");
+                    System.out.println("Enter the word to delete: ");
                     word = inputStr.nextLine();
-                    dictionary.remove(word);
+                    if (dictionary.remove(word) != null) {
+                        System.out.println("Word removed.");
+                    } else {
+                        System.out.println("Word not found.");
+                    }
                     break;
                 case 6:
-                    System.out.println("Çıkış Yapılıyor.");
+                    System.out.println("Exiting...");
                 default:
-                    System.out.println("Hatalı Giriş Yaptınız.Tekrar Deneyiniz.");
+                    System.out.println("Invalid entry. Please select a valid option.");
             }
 
 
